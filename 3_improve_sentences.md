@@ -8,7 +8,6 @@ selfはインスタンスオブジェクト自身を指しています。
 ```
 rubyの「self」はオブジェクトそのものを指しています。  
 ※オブジェクトとは変数とメソッドなどをまとめ、名前を付けた物です。
-例えば以下のコードを見てみましょう。
 
  class Menu
   def show_name
@@ -18,4 +17,6 @@ rubyの「self」はオブジェクトそのものを指しています。
  menu1 = Menu.new
  menu1.name = "太郎"
  menu1.show_name
+ 上記のようにselfでインスタンスを指すことができる。self=menu1=Menuになっている。
+
 ```
