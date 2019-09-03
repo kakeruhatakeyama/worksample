@@ -10,12 +10,12 @@ rubyの「self」はオブジェクトそのものを指しています。
 ※オブジェクトとは変数とメソッドなどをまとめ、名前を付けた物です。
 例えば以下のコードを見てみましょう。
 
-class Menu
- def show_name
-  puts "#{self.name}"
+ class Menu
+  def show_name
+   puts "#{self.name}"
+  end
  end
-end
-menu1 = Menu.new
-menu1.name = "太郎"
-menu1.show_name
+ menu1 = Menu.new
+ menu1.name = "太郎"
+ menu1.show_name
 ```
