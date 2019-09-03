@@ -1,14 +1,10 @@
-# Linuxコマンド基礎
+# Ruby on Rails を学ぶ前に
 
 ## このテキストのゴール
 
-## Linuxとは
-
-## Linuxコマンドとは
-
-## なぜLinuxコマンドを覚える必要があるか
-
-## 実際にLinuxコマンドを使ってみよう！
-### ls
-### mkdir
-### cd
+## 前提知識
+### HTML
+### CSS
+### JavaScript
+### SQL
+### Ruby
