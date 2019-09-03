@@ -17,8 +17,7 @@ class Hoge
   end
 end
  ```
-`def self.fuga`
-上記の部分は　self=クラス名=Hoge を指しています。
+`def self.fuga`の部分は　self=クラス名=Hoge を指しています。
 
 ただし、以下のような場合は異なります。
 ```
