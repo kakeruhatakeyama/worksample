@@ -11,15 +11,15 @@
 モデル…Model.newとすると1レコードだけのモデルができるように、1レコード単位で扱うので単数形  
 アソシエーション…has_manyは複数作れるので複数形、belongs_toやhas_oneは1つだけなので単数形  
 リクエストパラメーター…通常、一度に1モデルしか編集しないので、単数形  
-  
-Prefixの単数形/複数形の違いについても 、言語的慣習の面で考えてみれば   
-  
-blogs      GET    /blogs(.:format)           blogs#index   → ブログのコレクション(blogs)を取得(GET)する  
+>
+>Prefixの単数形/複数形の違いについても 、言語的慣習の面で考えてみれば   
+>
+>blogs      GET    /blogs(.:format)           blogs#index   → ブログのコレクション(blogs)を取得(GET)する  
 blogs      POST   /blogs(.:format)           blogs#create  → そのコレクション(blogs)に追加(POST)する  
 new_blog   GET    /blogs/new(.:format)       blogs#new     → blogを作る画面を出す  
 edit_blog  GET    /blogs/:id/edit(.:format)  blogs#edit    → 特定のblogを編集する画面を出す  
      :  
      :  
   (省略)  
-  
-のように単数形/複数形の区別が腹落ちするかと思います。  
+>
+>のように単数形/複数形の区別が腹落ちするかと思います。  
