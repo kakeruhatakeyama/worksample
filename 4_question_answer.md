@@ -21,6 +21,7 @@
 rake routesコマンドで確認すると以下のようになります。
 上記の分類を確認しながら見てみましょう。
 ```
+Prefix    Verb    URI Pattern                Controller#Action
 blogs      GET    /blogs(.:format)           blogs#index   → 一覧画面の生成  
 blogs      POST   /blogs(.:format)           blogs#create  → 上記一覧にブログ登録 
 new_blog   GET    /blogs/new(.:format)       blogs#new     → 新しいブログの登録画面の生成
