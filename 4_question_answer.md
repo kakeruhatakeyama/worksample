@@ -18,14 +18,17 @@
 アソシエーション…has_manyは複数作れるので複数形、belongs_toやhas_oneは1つだけなので単数形  
 リクエストパラメーター…通常、一度に1モデルしか編集しないので、単数形  
 
-Prefixの単数形/複数形の違いについても 、言語的慣習の面で考えてみれば   
+rake routesコマンドで確認すると以下のようになります。
+上記の分類を確認しながら見てみましょう。
 ```
-blogs      GET    /blogs(.:format)           blogs#index   → ブログのコレクション(blogs)を取得(GET)する  
-blogs      POST   /blogs(.:format)           blogs#create  → そのコレクション(blogs)に追加(POST)する  
-new_blog   GET    /blogs/new(.:format)       blogs#new     → blogを作る画面を出す  
-edit_blog  GET    /blogs/:id/edit(.:format)  blogs#edit    → 特定のblogを編集する画面を出す  
-    :  
-    :  
- (省略)  
+blogs      GET    /blogs(.:format)           blogs#index   → 一覧画面の生成  
+blogs      POST   /blogs(.:format)           blogs#create  → 上記一覧にブログ登録 
+new_blog   GET    /blogs/new(.:format)       blogs#new     → ブログ登録画面の生成
+edit_blog  GET    /blogs/:id/edit(.:format)  blogs#edit    → 特定のブログを編集する画面の生成   
+blog       GET    /blogs/:id(.:format)       blogs#show    → 特定のブログの詳細画面の生成
+blog       PATCH  /blogs/:id(.:format)       blogs#update  → 特定のブログの更新
+blog       PUT    /blogs/:id(.:format)       blogs#update  → 特定のブログの更新
+blog       DELETE /blogs/:id(.:format)       blogs#destroy → 特定のブログの削除
 ```
-のように単数形/複数形の区別が腹落ちするかと思います。  
+このように一覧に関係している物は複数形のblogs、特定の記事に関係する物はnew_blogなど単数形となっています。 
+まずはその動作や物が複数あるものなのか、単数のものなのかを考えてみればわかりやすいかもしれませんね。
