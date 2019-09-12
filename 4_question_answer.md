@@ -31,5 +31,5 @@ blog       PATCH  /blogs/:id(.:format)       blogs#update  → 特定のブロ�
 blog       PUT    /blogs/:id(.:format)       blogs#update  → 特定のブログの更新
 blog       DELETE /blogs/:id(.:format)       blogs#destroy → 特定のブログの削除
 ```
-このように一覧に関係している物は複数形のblogs、特定の記事に関係する物はnew_blogなど単数形となっています。  
+Prefixを見ると一覧に関係している物は複数形のblogs、特定の記事に関係する物はnew_blogなど単数形となっています。  
 まずはその動作や物が複数あるものなのか、単数のものなのかを考えてみればわかりやすいかもしれませんね。
