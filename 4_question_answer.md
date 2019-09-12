@@ -23,7 +23,7 @@ rake routesコマンドで確認すると以下のようになります。
 ```
 blogs      GET    /blogs(.:format)           blogs#index   → 一覧画面の生成  
 blogs      POST   /blogs(.:format)           blogs#create  → 上記一覧にブログ登録 
-new_blog   GET    /blogs/new(.:format)       blogs#new     → ブログ登録画面の生成
+new_blog   GET    /blogs/new(.:format)       blogs#new     → 新しいブログの登録画面の生成
 edit_blog  GET    /blogs/:id/edit(.:format)  blogs#edit    → 特定のブログを編集する画面の生成   
 blog       GET    /blogs/:id(.:format)       blogs#show    → 特定のブログの詳細画面の生成
 blog       PATCH  /blogs/:id(.:format)       blogs#update  → 特定のブログの更新
