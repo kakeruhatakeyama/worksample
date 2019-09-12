@@ -57,7 +57,7 @@ SQLとはDB（データベース）を扱う為のプログラミング言語で
 ```
 SELECT * 
 FROM member
-WHERE name = "佐藤"`
+WHERE name = "佐藤";
 ```
 
 ## Ruby
@@ -68,7 +68,7 @@ WHERE name = "佐藤"`
 
 文字列や数値などの値に名称をつけ、その値を格納するための入れ物のことを変数と呼びます。以下の場合samuraiという変数にrubyを格納しています。
 
-`samurai = "ruby"`
+`hoge = "ruby"`
 
 種類としては
 
