@@ -101,16 +101,16 @@ WHERE name = "佐藤";
 ユーザー一覧を表示したい時などに「each」や「times」などの繰り返しの処理が必要になります。
 
 ```
-data = ["東京", "大阪", "京都"]  
+data = ["hoge", "huga", "piyo"]  
 
    data.each do |value|  
-     print fruite + “、”  
+     print value + “、”  
    end  
 ```
 
 結果
 
-`東京、大阪、京都`
+`hoge、huga、piyo`
 
 ### 条件分岐
 
