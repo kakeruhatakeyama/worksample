@@ -18,7 +18,7 @@
 アソシエーション…has_manyは複数作れるので複数形、belongs_toやhas_oneは1つだけなので単数形  
 リクエストパラメーター…通常、一度に1モデルしか編集しないので、単数形  
 
-rake routesコマンドで確認すると以下のようになります。
+rake routesコマンドでblogsのルーティングを確認すると以下のようになります。
 上記の分類を確認しながら見てみましょう。
 ```
 Prefix    Verb    URI Pattern                Controller#Action
