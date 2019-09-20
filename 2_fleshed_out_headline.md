@@ -104,14 +104,16 @@ WHERE name = "佐藤";
 data = ["hoge", "huga", "piyo"]  
 
    data.each do |value|  
-     print value + “、”  
+     puts value
    end  
 ```
 
 結果
-
-`hoge、huga、piyo`
-
+```
+hoge
+huga
+piyo
+```
 ### 条件分岐
 
 もし○○ならば△△、そうでなければ□□を実行、のように条件によって処理を分ける事を指します。if文やcase文などがそれにあたります。実はRailsでは、生成したファイルに自動でif文がついている事がありますが、それだけでできた気になる点に注意が必要です。簡単に自分でif文やcase文を書けるようになっておきましょう。
